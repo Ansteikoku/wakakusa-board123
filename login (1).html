@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ログイン - わかくさ掲示板</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>ログイン</h1>
+  <div id="logArea"></div>
+  <input type="password" id="password" placeholder="パスワードを入力">
+  <button onclick="login()">ログイン</button>
+
+  <script>
+    function login() {
+      const pass = document.getElementById("password").value;
+      if (pass === "wakakusa") {
+        localStorage.setItem("wakakusa_logged_in", "true");
+        location.href = "index.html";
+      } else {
+        document.getElementById("logArea").style.color = "red";
+        document.getElementById("logArea").textContent = "パスワードが違います";
+      }
+    }
+  </script>
+</body>
+</html>

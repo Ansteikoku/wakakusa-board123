@@ -1,0 +1,53 @@
+body {
+  font-family: "Meiryo", sans-serif;
+  background-color: #fffff0;
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
+h1 {
+  color: #006400;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+h2 {
+  margin-top: 30px;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+}
+textarea, input {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+button {
+  padding: 5px 15px;
+  font-size: 16px;
+  background-color: #90ee90;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #7ccd7c;
+}
+.thread {
+  margin-bottom: 10px;
+}
+.comment {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.comment-number {
+  color: #0000cd;
+  margin-right: 5px;
+}
+.name {
+  color: #008000;
+}
+.topbar {
+  text-align: right;
+  margin-bottom: 10px;
+}
